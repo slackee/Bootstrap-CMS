@@ -5,10 +5,12 @@
 @stop
 
 @section('top')
-@if($page->show_title)
-    <div class="page-header">
-    <h1>{{{ $page->title }}}</h1>
-    </div>
+@if($page->title != '')
+    @if($page->show_title)
+        <div class="page-header">
+        <h1>{{{ $page->title }}}</h1>
+        </div>
+    @endif
 @endif
 @stop
 
